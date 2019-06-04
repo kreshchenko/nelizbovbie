@@ -83,9 +83,9 @@
           simply dummy text of the printingand typesetting industry. Lorem ipsum
           has been the industries standart
         </p>
-        <div class="button thankYou-button">
+        <button class="button thankYou-button">
           Thank you
-        </div>
+        </button>
       </section>
 
       <section class="main-container-our-services">
@@ -116,9 +116,12 @@
     </main>
 
     <footer class="main-footer">
-      <section class="main-footer-map">
+      <section class="main-footer-map" id="googlemap">
         <h2 class="visually-hidden">Контакти</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83366.18447054154!2d28.399593673367615!3d49.23482492047488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b65195a6489%3A0xcbd4e159eedd74fe!2z0JLQuNC90L3QuNGG0LAsINCS0LjQvdC90LjRhtC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMjEwMDA!5e0!3m2!1sru!2sua!4v1559650754996!5m2!1sru!2sua" 
+        width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
+      <div class="contacts-container">
       <section class="main-footer-contacts">
         <h3>Address</h3>
         <p>
@@ -131,16 +134,19 @@
       <section class="main-footer-contact-form">
         <h3>Contact us</h3>
         <form class="footer-contact-form" action="#" method="post">
-          <label for="name">Ваше ім'я</label>
-          <input type="text" name="name" />
-          <label for="email">Ваша пошта</label>
-          <input type="email" name="email" />
-          <label for="telephone">Ваш номер телефону</label>
-          <input type="tel" name="telephone" />
-          <textarea class="contact-form-message" cols="10"></textarea>
+          <label class="visually-hidden" for="name">Ваше ім'я</label>
+          <input type="text" name="name" placeholder="Name"/>
+          <label class="visually-hidden" for="email">Ваша пошта</label>
+          <input type="email" name="email" placeholder="Email" />
+          <label class="visually-hidden" for="telephone">Ваш номер телефону</label>
+          <input type="tel" name="telephone" placeholder="Phone"/>
+          <textarea class="contact-form-message" cols="10" placeholder="Message"></textarea>
           <button class="button submit-button">Submit</button>
         </form>
       </section>
+    </div>
     </footer>
+ 
+
   </body>
 </html>
